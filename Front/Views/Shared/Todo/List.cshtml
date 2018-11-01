@@ -1,0 +1,10 @@
+﻿@using Core.Dtos;
+@model List<TodoDto>
+
+<div class="todo-list">
+    @foreach (TodoDto todo in Model)
+    {
+        Html.RenderPartial("Todo/Item", todo);
+    }
+
+</div>
